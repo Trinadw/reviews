@@ -10,10 +10,10 @@ public class Review {
 	private String content;
 	private String date;
 	private String synopsis;
-	private String tag;
+	
 	// todo reemove tag and rename title to location and synopsis to description
 	//Contructor
-	public Review(long id, String title, String imageUrl, String reviewCategory, String content, String date, String synopsis, String tag){
+	public Review(long id, String title, String imageUrl, String reviewCategory, String content, String date, String synopsis){
 	 this.id = id;
 	 this.title = title;
 	 this.imageUrl = imageUrl;
@@ -21,7 +21,7 @@ public class Review {
 	 this.content = content;
 	 this.date = date;
 	 this.synopsis = synopsis;
-	 this.tag = tag;
+	
 	 
 	}
 	//Getters
@@ -46,9 +46,7 @@ public class Review {
 	public String getSynopsis() {
 		return synopsis;
 	}
-	public String getTag() {
-		return tag;
-	}
+	
 	//public String toString() { 
 	//	return "Id: "+ id + "Title: " + title;
 	//}
