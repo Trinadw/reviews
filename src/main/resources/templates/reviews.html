@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link href="/css/reviews.css" rel="stylesheet"></link>
+	<title>Trina's Travels</title>
+</head>
+<body>
+<h1>Trina's Travel Reviews</h1>
+<div class="story">
+<p><img src="/images/16355752890_70cfb866d9_o.jpg" width="900" height="350"/>Welcome to Trina's Travels. Growing up in St. Louis, Missouri, I was never a big traveler. I didn’t take my first trip overseas until I was 26. My only travel experience was within the United States. After settling into my career I decided I wanted to travel. After all, I had the job and my finances were stable. It was vacation time, right?</p>
+<p> So for my first trip overseas in 2001, I went to London. That trip changed my life. It opened me up to the possibilities of the world. In London, I experienced other cultures, saw historic pieces dating back centuries, and met people from around the world. From that moment on, I was hooked on travel. All I wanted to do was travel, see more of the world, and learn more about the people in it. My goal is to travel to every country and meet as many people as I can. So far I have visited over 10 countries and will share my experiences with you, so that you can motivate yourself to visit the same countries or live vicariously through my travels.</p>
+<p>Below you will see a list of my vacation spots. I've been lucky enough to travel to multiple continents and see some awesome wonders of the world. During my travels i've also been able to experience the hospitality of multiple cultures. I must say they I have been blessed to always encounter people who were more than willing to assist me if I had questions or were as genuinely pleased to meet me as I was to meet them.</p>
+</div>   
+ 
+
+<a th:each="review: ${reviewsAsCollection}" th:href="@{http://localhost:8080/onereview/(id=${review.id})}"><div th:text="${review.title}" ></div></a>
+
+<h2>Gallery</h2>
+<div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimageCamel.jpg"> 
+    <img src="/images/Webp.net-resizeimageCamel.jpg" alt="Camel" width="300" height="200"/></a>
+  
+  <div class="desc">Camel ride in Turkey</div>
+</div>
+
+ <div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimagemonkey.jpg">
+    <img src="/images/Webp.net-resizeimagemonkey.jpg" alt="Monkey" width="300" height="200"/>
+  </a>
+  <div class="desc">Monkeys in Barbados</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimageStPetersburg.jpg">
+    <img src="/images/Webp.net-resizeimageStPetersburg.jpg" alt="StPete" width="300" height="200"/>
+  </a>
+  <div class="desc">St. Petersburg, Russia</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimageMalaga.jpg">
+    <img src="/images/Webp.net-resizeimageMalaga.jpg" alt="Malaga" width="300" height="200"/>
+  </a>
+  <div class="desc">Malaga, Spain</div>
+</div> 
+
+<div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimageTenerife.jpg">
+    <img src="/images/Webp.net-resizeimageTenerife.jpg" alt="Tenerife" width="300" height="200"/>
+  </a>
+  <div class="desc">Tenerife, Spain</div>
+</div> 
+
+<div class="gallery">
+  <a target="_blank" href="/images/Webp.net-resizeimageRomebust.jpg">
+    <img src="/images/Webp.net-resizeimageRomebust.jpg" alt="RomanBust" width="300" height="200"/>
+  </a>
+  <div class="desc">Vatican Museum</div>
+</div>
+</body>
+</html>

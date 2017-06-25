@@ -1,0 +1,10 @@
+body{
+	background-color: grey;
+}
+
+img{
+	float: right;
+	margin: 0px 70px;
+	border-style: solid;
+	height:430px;
+	width:315px;

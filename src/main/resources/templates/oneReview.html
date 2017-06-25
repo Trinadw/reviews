@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link href="/css/reviews.css" rel="stylesheet"></link>
+	<title>Trina's Reviews</title>
+</head>
+<body>
+<h1>Travel Reviews</h1>
+
+<img th:src="${onereview.imageUrl}"/>
+<p th:text="'ID: ' +${onereview.id}"></p> 
+<p th:text="'Location: ' + ${onereview.title}"></p>
+<p th:text="'Vacation Type: ' + ${onereview.reviewCategory}"></p>
+<p th:text="'Review: ' + ${onereview.content}"></p>
+<p th:text="'City Description: ' + ${onereview.synopsis}"></p>
+
+
+</body>
+</html>
