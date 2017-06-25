@@ -7,7 +7,7 @@ import reviews.ReviewApp;
 
 @SpringBootApplication
 public class ReviewApp {
-
+//runs the application
 	public static void main(String[] args) {
 		SpringApplication.run(ReviewApp.class, args);
 	}

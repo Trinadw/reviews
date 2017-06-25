@@ -1,7 +1,15 @@
 body{
 	background-color: pink;
 }
-html  {font-family: "Arial", sans-serif;
+/*html  {font-family: "Montserrat", sans-serif;
+	}*/
+header{
+		text-align: center;
+		font-size: 30;
+		background-image: url("/images/imageedit_1_9741139575.jpg");
+		height: 150px;
+		border-style: solid;
+
 	}
 
 div.story img{
@@ -21,7 +29,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-    width: 100%;
+    width:130px;
+    height: 120px;
     height: auto;
 }
 

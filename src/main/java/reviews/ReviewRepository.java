@@ -12,11 +12,11 @@ public class ReviewRepository {
 	//Creating review map
 	Map<Long,Review> reviewMap = new HashMap<Long, Review>();
 	
-	//Constructor
+	
 	public ReviewRepository() {
     
 	//Constructor
-	Review review = new Review(12345, "London", "/images/Webp.net-resizeimageLondon.jpg", "City", "Fun city, full of history and people. The museums are magical.", "March 2001", "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.", "tag");
+	Review review = new Review(12345, "London", "/images/Webp.net-resizeimageLondon.jpg", "City", "Fun city, full of history and people. The museums are magical.The food leaves something to be desired but you don't go to London for food.", "March 2001", "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.", "tag");
 	reviewMap.put(review.getId(),review);
 	Review review2 = new Review(12346, "Cancun", "/images/Webp.net-resizeimageCancun.jpg", "Beach", "Mexican town that boasts beautiful beaches and awesome water sports.", "May 2006", "Cancún, a Mexican city on the Yucatán Peninsula bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife.", "tag");
 	reviewMap.put(review2.getId(),review2);

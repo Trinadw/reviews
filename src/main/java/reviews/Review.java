@@ -11,7 +11,7 @@ public class Review {
 	private String date;
 	private String synopsis;
 	private String tag;
-	
+	// todo reemove tag and rename title to location and synopsis to description
 	//Contructor
 	public Review(long id, String title, String imageUrl, String reviewCategory, String content, String date, String synopsis, String tag){
 	 this.id = id;

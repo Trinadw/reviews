@@ -14,13 +14,13 @@ public class ReviewsController {
 	@Resource
 	ReviewRepository repository;
 
-		
+		//path to all reviews
 	@RequestMapping("/reviews")
 	public String fetchReviews(Model model) {
 		model.addAttribute("reviewsAsCollection", repository.findAll());
 		return "reviews";
 	}
-	
+	//path to one review
 	@RequestMapping("/onereview")
     public String fetchOne(@RequestParam(value="id") Long id, Model model) {
          model.addAttribute("onereview", repository.findOne(id));
