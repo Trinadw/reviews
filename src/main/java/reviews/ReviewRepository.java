@@ -15,7 +15,7 @@ public class ReviewRepository {
 	
 	public ReviewRepository() {
     
-	//Constructor
+	//Constructor creating location objects and adding to map
 	Review review = new Review(12345, "London", "/images/Webp.net-resizeimageLondon.jpg", "City", "Fun city, full of history and people. The museums are magical.The food leaves something to be desired but you don't go to London for food.", "March 2001", "London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.");
 	reviewMap.put(review.getId(),review);
 	Review review2 = new Review(12346, "Cancun", "/images/Webp.net-resizeimageCancun.jpg", "Beach", "Mexican town that boasts beautiful beaches and awesome water sports. Be careful tipping. There is a lot of poverty in Cancun and empathy can lead to over tipping and blowing your budget.", "May 2006", "Cancún, a Mexican city on the Yucatán Peninsula bordering the Caribbean Sea, is known for its beaches, numerous resorts and nightlife.");
